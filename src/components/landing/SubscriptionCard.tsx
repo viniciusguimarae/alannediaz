@@ -12,7 +12,7 @@ const SubscriptionCard = () => (
           VISTA TUDO AGORA 🔥🔥
         </span>
       </div>
-      <span className="text-xs text-muted-foreground mt-1 block">Promocional</span>
+      <span className="text-xs text-green-600 font-medium mt-1 block">Promocional</span>
 
       <div className="flex items-center justify-between mt-3">
         <span className="text-sm font-medium text-foreground">15 Dias</span>

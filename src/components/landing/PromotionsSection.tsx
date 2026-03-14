@@ -21,7 +21,7 @@ const PromotionsSection = () => {
             key={plan.id}
             onClick={() => setSelected(plan.id)}
             className={cn(
-              'w-full rounded-xl border-2 p-4 text-left transition-all duration-200',
+              'w-full rounded-xl border-2 py-3 px-4 text-left transition-all duration-200',
               selected === plan.id
                 ? 'border-primary bg-primary/5 shadow-md'
                 : 'border-border bg-card hover:border-primary/30'

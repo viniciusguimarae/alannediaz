@@ -19,11 +19,11 @@ const FAQSection = () => (
     <h2 className="text-lg font-bold text-foreground mb-3" style={{ fontFamily: 'Outfit' }}>
       Perguntas Frequentes
     </h2>
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion type="single" collapsible className="w-full space-y-2">
       {faqs.map((faq, i) => (
-        <AccordionItem key={i} value={`item-${i}`}>
-          <AccordionTrigger className="text-sm text-left font-medium">{faq.q}</AccordionTrigger>
-          <AccordionContent className="text-sm text-muted-foreground">{faq.a}</AccordionContent>
+        <AccordionItem key={i} value={`item-${i}`} className="border-0 bg-muted rounded-xl px-4">
+          <AccordionTrigger className="text-sm text-left font-medium py-3">{faq.q}</AccordionTrigger>
+          <AccordionContent className="text-sm text-muted-foreground pb-3">{faq.a}</AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
