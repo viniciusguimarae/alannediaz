@@ -13,8 +13,8 @@ const LockedPost = ({ mediaType, mediaUrl }: LockedPostProps) => (
         <img src="/perfil.jpg.png" alt="NC" className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col justify-center">
-        <p className="text-[14px] font-semibold text-foreground leading-tight tracking-tight">Nicolle Caroline</p>
-        <p className="text-[12px] text-muted-foreground leading-tight tracking-tight">@nicollecaroline</p>
+        <p className="text-[14px] font-semibold text-foreground leading-tight tracking-tight">Alane Diaz</p>
+        <p className="text-[12px] text-muted-foreground leading-tight tracking-tight">@alannediaz</p>
       </div>
     </div>
 

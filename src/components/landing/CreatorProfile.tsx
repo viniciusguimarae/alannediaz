@@ -34,11 +34,11 @@ const CreatorProfile = () => {
           <div className="mt-1">
             <div className="flex items-center gap-1">
               <h1 className="text-lg font-semibold text-foreground leading-none tracking-tight">
-                Nicolle Caroline
+                Alane Diaz
               </h1>
               <BadgeCheck className="h-[14px] w-[14px] text-primary fill-white" strokeWidth={1.5} />
             </div>
-            <p className="text-[#65676b] text-[13px] mt-1 tracking-tight">@nicollecaroline</p>
+            <p className="text-[#65676b] text-[13px] mt-1 tracking-tight">@alannediaz</p>
           </div>
         </div>
 
