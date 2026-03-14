@@ -31,14 +31,14 @@ const LockedPost = ({ likes, comments, mediaType, mediaUrl }: LockedPostProps) =
           loop 
           playsInline
           className="w-full h-full object-cover absolute inset-0"
-          style={{ filter: 'blur(18px) brightness(70%)', transform: 'scale(1.1)' }}
+          style={{ filter: 'blur(14px) brightness(70%)', transform: 'scale(1.1)' }}
         />
       ) : (
         <img 
           src={mediaUrl} 
           alt="Locked content preview" 
           className="w-full h-full object-cover absolute inset-0"
-          style={{ filter: 'blur(18px) brightness(70%)', transform: 'scale(1.1)' }}
+          style={{ filter: 'blur(14px) brightness(70%)', transform: 'scale(1.1)' }}
         />
       )}
       
