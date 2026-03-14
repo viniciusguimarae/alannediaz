@@ -11,40 +11,10 @@ const MEDIA_MOCKS = [
 ];
 
 const MediaGallery = () => {
-  const [activeMainTab, setActiveMainTab] = useState('Postagens');
   const [activeFilterTab, setActiveFilterTab] = useState('Todos');
 
   return (
-    <div className="mt-8 mx-5 mb-10 bg-card border border-border rounded-xl overflow-hidden shadow-sm">
-      {/* Top Switcher (Postagens / Mídias) */}
-      <div className="flex px-4 pt-1 border-b border-border">
-        <button
-          onClick={() => setActiveMainTab('Postagens')}
-          className={cn(
-            'flex-1 pb-3 pt-3 text-sm font-semibold flex items-center justify-center gap-2 transition-all relative',
-            activeMainTab === 'Postagens' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
-          )}
-        >
-          <span className="border border-current rounded-sm px-1.5 py-0.5 text-[10px] leading-none">33</span> 
-          Postagens
-          {activeMainTab === 'Postagens' && (
-            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-primary rounded-t-full" />
-          )}
-        </button>
-        <button
-          onClick={() => setActiveMainTab('Mídias')}
-          className={cn(
-            'flex-1 pb-3 pt-3 text-sm font-semibold flex items-center justify-center gap-2 transition-all relative',
-            activeMainTab === 'Mídias' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
-          )}
-        >
-          <span className="border border-current rounded-sm px-1.5 py-0.5 text-[10px] leading-none">25</span> 
-          Mídias
-          {activeMainTab === 'Mídias' && (
-            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-primary rounded-t-full" />
-          )}
-        </button>
-      </div>
+    <div className="mx-5 mb-10 bg-card border border-border rounded-xl overflow-hidden shadow-sm">
 
       {/* Filter Tabs Menu */}
       <div className="flex items-center justify-center pt-4 pb-4 gap-2">
