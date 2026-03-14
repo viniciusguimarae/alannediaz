@@ -6,10 +6,10 @@ interface LockedPostProps {
 }
 
 const LockedPost = ({ mediaType, mediaUrl }: LockedPostProps) => (
-  <div className="mx-5 mb-6 rounded-2xl bg-card border border-border shadow-sm overflow-hidden">
+  <div className="mx-4 mb-6 rounded-2xl bg-white border border-black/5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
     {/* Creator info */}
     <div className="flex items-center gap-3 p-3">
-      <div className="w-9 h-9 rounded-full relative overflow-hidden flex-shrink-0">
+      <div className="w-8 h-8 rounded-full relative overflow-hidden flex-shrink-0">
         <img src="/perfil.jpg.png" alt="NC" className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col justify-center">
@@ -51,20 +51,20 @@ const LockedPost = ({ mediaType, mediaUrl }: LockedPostProps) => (
     </div>
 
     {/* Engagement Action Bar */}
-    <div className="flex items-center justify-between p-3.5 text-foreground">
+    <div className="flex items-center justify-between p-3 text-foreground">
       <div className="flex items-center gap-4">
         <button className="transition-transform active:scale-90 hover:text-muted-foreground">
-          <Heart className="h-[22px] w-[22px]" strokeWidth={1.5} />
+          <Heart className="h-[24px] w-[24px]" strokeWidth={1.25} />
         </button>
         <button className="transition-transform active:scale-90 hover:text-muted-foreground">
-          <MessageCircle className="h-[22px] w-[22px]" strokeWidth={1.5} />
+          <MessageCircle className="h-[24px] w-[24px]" strokeWidth={1.25} />
         </button>
         <button className="transition-transform active:scale-90 hover:text-muted-foreground">
-          <CircleDollarSign className="h-[22px] w-[22px]" strokeWidth={1.5} />
+          <CircleDollarSign className="h-[24px] w-[24px]" strokeWidth={1.25} />
         </button>
       </div>
       <button className="transition-transform active:scale-90 hover:text-muted-foreground">
-        <Bookmark className="h-[22px] w-[22px]" strokeWidth={1.5} />
+        <Bookmark className="h-[24px] w-[24px]" strokeWidth={1.25} />
       </button>
     </div>
   </div>

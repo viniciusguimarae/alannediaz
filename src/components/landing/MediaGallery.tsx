@@ -14,7 +14,7 @@ const MediaGallery = () => {
   const [activeFilterTab, setActiveFilterTab] = useState('Todos');
 
   return (
-    <div className="mx-5 mb-10 bg-card border border-border rounded-xl overflow-hidden shadow-sm">
+    <div className="mx-4 mb-10 bg-white border border-black/5 rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
 
       {/* Filter Tabs Menu */}
       <div className="flex items-center justify-center pt-4 pb-4 gap-2">

@@ -36,22 +36,22 @@ const CreatorProfile = () => {
               <h1 className="text-lg font-semibold text-foreground leading-none tracking-tight">
                 Nicolle Caroline
               </h1>
-              <BadgeCheck className="h-[14px] w-[14px] text-primary" strokeWidth={2.5} />
+              <BadgeCheck className="h-[14px] w-[14px] text-primary fill-white" strokeWidth={1.5} />
             </div>
             <p className="text-[#65676b] text-[13px] mt-1 tracking-tight">@nicollecaroline</p>
           </div>
         </div>
 
         {/* Bio */}
-        <div className="mt-2">
-          <p className={`text-xs text-muted-foreground leading-relaxed ${!expanded ? 'line-clamp-3' : ''}`}>
+        <div className="mt-3">
+          <p className={`text-[13px] text-muted-foreground leading-relaxed tracking-tight ${!expanded ? 'line-clamp-3' : ''}`}>
             Oie amor! 💕 Aqui você vai ter acesso ao meu conteúdo mais exclusivo e ousado. 
             Fotos e vídeos que não posto em nenhum outro lugar. Vem comigo e aproveita essa 
             promoção especial que preparei com muito carinho pra você! 🔥
           </p>
           <button
             onClick={() => setExpanded(!expanded)}
-            className="text-muted-foreground text-xs mt-1"
+            className="text-muted-foreground text-[13px] mt-1 font-medium"
           >
             {expanded ? 'Mostrar menos' : 'Mostrar mais'}
           </button>

@@ -22,35 +22,38 @@ const Index = () => {
     <div className="min-h-screen bg-background max-w-md mx-auto pb-10">
       <PlatformHeader />
       <CreatorProfile />
-      <SubscriptionCard />
-      <PromotionsSection />
+      {/* Plans Container */}
+      <div className="mx-4 mt-6 p-4 rounded-2xl bg-white" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+        <SubscriptionCard />
+        <PromotionsSection />
+      </div>
 
       {/* Top Switcher (Postagens / Mídias) */}
-      <div className="flex px-4 pt-1 mt-6 mb-4 border-b border-border mx-5">
+      <div className="flex px-4 pt-1 mt-6 mb-5 border-b border-border mx-4">
         <button
           onClick={() => setActiveMainTab('Postagens')}
           className={cn(
-            'flex-1 pb-3 pt-3 text-[14px] font-semibold flex items-center justify-center gap-2 transition-all relative tracking-tight',
+            'flex-1 pb-3 pt-3 text-[14px] font-medium flex items-center justify-center gap-1.5 transition-all relative tracking-tight',
             activeMainTab === 'Postagens' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
           )}
         >
-          <FileText className="h-[18px] w-[18px]" strokeWidth={2} />
+          <FileText className="h-[15px] w-[15px]" strokeWidth={1.5} />
           Postagens
           {activeMainTab === 'Postagens' && (
-            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-primary rounded-t-full" />
+            <div className="absolute bottom-0 left-[20%] w-[60%] h-[2px] bg-primary rounded-t-full" />
           )}
         </button>
         <button
           onClick={() => setActiveMainTab('Mídias')}
           className={cn(
-            'flex-1 pb-3 pt-3 text-[14px] font-semibold flex items-center justify-center gap-2 transition-all relative tracking-tight',
+            'flex-1 pb-3 pt-3 text-[14px] font-medium flex items-center justify-center gap-1.5 transition-all relative tracking-tight',
             activeMainTab === 'Mídias' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
           )}
         >
-          <ImageIcon className="h-[18px] w-[18px]" strokeWidth={2} />
+          <ImageIcon className="h-[15px] w-[15px]" strokeWidth={1.5} />
           Mídias
           {activeMainTab === 'Mídias' && (
-            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-primary rounded-t-full" />
+            <div className="absolute bottom-0 left-[20%] w-[60%] h-[2px] bg-primary rounded-t-full" />
           )}
         </button>
       </div>
