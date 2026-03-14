@@ -10,7 +10,7 @@ const PromotionsSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full mt-5">
+    <div className="mx-4 mt-1 mb-2">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between mb-2"
@@ -37,7 +37,7 @@ const PromotionsSection = () => {
           {plans.map((plan) => (
             <div
               key={plan.id}
-              className="w-full h-[44px] rounded-full bg-[linear-gradient(90deg,#f3ad83_0%,#efaa84_45%,#f1b299_100%)] flex items-center justify-between px-5 cursor-pointer transition-transform active:scale-[0.98]"
+              className="w-full h-[42px] rounded-full bg-[linear-gradient(90deg,#f4b087_0%,#efaa84_45%,#f3b99c_100%)] flex items-center justify-between px-[18px] cursor-pointer transition-transform active:scale-[0.98]"
             >
               <div className="flex items-center gap-2">
                 <span className="text-foreground text-[14px] font-medium tracking-tight">
@@ -47,7 +47,7 @@ const PromotionsSection = () => {
                   ({plan.badge})
                 </span>
               </div>
-              <span className="text-foreground font-bold text-[15px] tracking-tight">
+              <span className="text-foreground font-semibold text-[14px] tracking-tight">
                 {plan.price}
               </span>
             </div>

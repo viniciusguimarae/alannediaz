@@ -19,18 +19,18 @@ const Index = () => {
   const [activeMainTab, setActiveMainTab] = useState('Postagens');
 
   return (
-    <div className="min-h-screen bg-background max-w-[420px] mx-auto px-3 pb-10">
+    <div className="min-h-screen bg-background max-w-[420px] mx-auto px-[14px] pb-10">
       <PlatformHeader />
       
       {/* Hero Super Container */}
-      <div className="mt-4 p-4 rounded-2xl bg-white" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+      <div className="mt-4 rounded-[16px] bg-white overflow-hidden pb-4" style={{ border: '1px solid rgba(0,0,0,0.08)' }}>
         <CreatorProfile />
         <SubscriptionCard />
         <PromotionsSection />
       </div>
 
       {/* Tabs Container */}
-      <div className="mt-5 mb-4 p-2 rounded-2xl bg-white" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+      <div className="mt-5 mb-4 p-2 rounded-[14px] bg-white" style={{ border: '1px solid rgba(0,0,0,0.08)' }}>
         <div className="flex">
           <button
             onClick={() => setActiveMainTab('Postagens')}

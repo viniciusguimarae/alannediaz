@@ -7,7 +7,7 @@ const CreatorProfile = () => {
   return (
     <div className="w-full">
       {/* Banner */}
-      <div className="w-full h-[120px] bg-gradient-to-br from-primary/80 via-primary/60 to-orange-300 relative overflow-hidden">
+      <div className="h-[120px] bg-gradient-to-br from-primary/80 via-primary/60 to-orange-300 relative overflow-hidden rounded-[12px] m-[12px]">
         <img src="/cover.jpg.jpeg" alt="Cover" className="w-full h-full object-cover" />
       </div>
 
