@@ -8,14 +8,14 @@ const CreatorProfile = () => {
     <div className="w-full">
       {/* Banner */}
       <div className="w-full h-[120px] bg-gradient-to-br from-primary/80 via-primary/60 to-orange-300 relative overflow-hidden">
-        <img src="/cover.jpg" alt="Cover" className="w-full h-full object-cover" />
+        <img src="/cover.jpg.jpeg" alt="Cover" className="w-full h-full object-cover" />
       </div>
 
       {/* Profile section */}
       <div className="px-5 -mt-10 relative">
         {/* Avatar */}
         <div className="w-20 h-20 rounded-full border-4 border-background bg-gradient-to-br from-primary/40 to-orange-200 overflow-hidden shadow-lg relative z-10">
-          <img src="/perfil.jpg" alt="Profile" className="w-full h-full object-cover" />
+          <img src="/perfil.jpg.png" alt="Profile" className="w-full h-full object-cover" />
         </div>
 
         {/* Name + Stats row */}

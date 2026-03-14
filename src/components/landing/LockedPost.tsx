@@ -12,7 +12,7 @@ const LockedPost = ({ likes, comments, mediaType, mediaUrl }: LockedPostProps) =
     {/* Creator info */}
     <div className="flex items-center gap-3 p-3">
       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/40 to-orange-200 flex items-center justify-center text-xs font-bold text-primary-foreground overflow-hidden shadow-sm" style={{ fontFamily: 'Outfit' }}>
-        <img src="/perfil.jpg" alt="NC" className="w-full h-full object-cover" />
+        <img src="/perfil.jpg.png" alt="NC" className="w-full h-full object-cover" />
       </div>
       <div>
         <p className="text-sm font-semibold text-foreground leading-none">Nicolle Caroline</p>
