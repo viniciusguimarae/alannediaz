@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { FileText, Image as ImageIcon } from 'lucide-react';
 import PlatformHeader from '@/components/landing/PlatformHeader';
 import CreatorProfile from '@/components/landing/CreatorProfile';
 import SubscriptionCard from '@/components/landing/SubscriptionCard';
@@ -31,11 +32,11 @@ const Index = () => {
         <button
           onClick={() => setActiveMainTab('Postagens')}
           className={cn(
-            'flex-1 pb-3 pt-3 text-sm font-semibold flex items-center justify-center gap-2 transition-all relative',
+            'flex-1 pb-3 pt-3 text-[14px] font-semibold flex items-center justify-center gap-2 transition-all relative tracking-tight',
             activeMainTab === 'Postagens' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
           )}
         >
-          <span className="border border-current rounded-sm px-1.5 py-0.5 text-[10px] leading-none">33</span> 
+          <FileText className="h-[18px] w-[18px]" strokeWidth={2} />
           Postagens
           {activeMainTab === 'Postagens' && (
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-primary rounded-t-full" />
@@ -44,11 +45,11 @@ const Index = () => {
         <button
           onClick={() => setActiveMainTab('Mídias')}
           className={cn(
-            'flex-1 pb-3 pt-3 text-sm font-semibold flex items-center justify-center gap-2 transition-all relative',
+            'flex-1 pb-3 pt-3 text-[14px] font-semibold flex items-center justify-center gap-2 transition-all relative tracking-tight',
             activeMainTab === 'Mídias' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
           )}
         >
-          <span className="border border-current rounded-sm px-1.5 py-0.5 text-[10px] leading-none">25</span> 
+          <ImageIcon className="h-[18px] w-[18px]" strokeWidth={2} />
           Mídias
           {activeMainTab === 'Mídias' && (
             <div className="absolute bottom-0 left-0 w-full h-[2px] bg-primary rounded-t-full" />
