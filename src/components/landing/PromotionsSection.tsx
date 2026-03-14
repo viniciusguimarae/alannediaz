@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const plans = [
-  { id: 1, duration: '30 Dias', badge: 'Mais popular', oldPrice: 'R$ 69,90', price: 'R$ 29,90' },
+  { id: 1, duration: '2 meses', badge: '44% off', oldPrice: 'R$ 89,90', price: 'R$ 49,90' },
 ];
 
 const PromotionsSection = () => {

@@ -12,24 +12,29 @@ const CreatorProfile = () => {
       </div>
 
       {/* Profile section */}
-      <div className="px-5 -mt-10 relative">
-        {/* Avatar */}
-        <div className="w-20 h-20 rounded-full border-4 border-background bg-gradient-to-br from-primary/40 to-orange-200 overflow-hidden shadow-lg relative z-10">
-          <img src="/perfil.jpg.png" alt="Profile" className="w-full h-full object-cover" />
-        </div>
-
-        {/* Name + Stats row */}
-        <div className="mt-2 flex items-center justify-between">
-          <div className="flex items-center gap-1">
-            <h1 className="text-lg font-bold text-foreground" style={{ fontFamily: 'Outfit' }}>
-              Nicolle Caroline
-            </h1>
-            <BadgeCheck className="h-4.5 w-4.5 text-blue-500 fill-blue-500" />
+      <div className="px-5 mt-4 relative">
+        <div className="flex items-start justify-between">
+          <div className="flex items-center gap-3">
+            {/* Avatar */}
+            <div className="w-16 h-16 rounded-full border-2 border-background bg-gradient-to-br from-primary/40 to-orange-200 overflow-hidden shadow-sm relative z-10 -mt-8">
+              <img src="/perfil.jpg.png" alt="Profile" className="w-full h-full object-cover" />
+            </div>
+            {/* Name */}
+            <div className="-mt-4">
+              <div className="flex items-center gap-1">
+                <h1 className="text-base font-bold text-foreground" style={{ fontFamily: 'Outfit' }}>
+                  Nicolle Caroline
+                </h1>
+                <BadgeCheck className="h-4 w-4 text-blue-500 fill-blue-500" />
+              </div>
+              <p className="text-xs text-muted-foreground">@nicollecaroline</p>
+            </div>
           </div>
-          <div className="flex items-center gap-3 text-muted-foreground text-xs">
-            <span className="flex items-center gap-0.5"><Camera className="h-3.5 w-3.5" /> 354</span>
-            <span className="flex items-center gap-0.5"><Video className="h-3.5 w-3.5" /> 148</span>
-            <span className="flex items-center gap-0.5"><Heart className="h-3.5 w-3.5" /> 20.2K</span>
+
+          {/* Stats row */}
+          <div className="flex items-center gap-3 text-muted-foreground text-xs -mt-1">
+            <span className="flex items-center gap-1"><Camera className="h-4 w-4" /> 33</span>
+            <span className="flex items-center gap-1"><Video className="h-4 w-4" /> 25</span>
           </div>
         </div>
 

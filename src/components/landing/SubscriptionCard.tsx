@@ -6,19 +6,23 @@ const SubscriptionCard = () => (
       Assinaturas
     </h2>
 
-    <div className="mt-4 rounded-xl bg-secondary/60 p-4">
-      <div className="flex items-center gap-2">
-        <span className="bg-primary text-primary-foreground text-xs font-bold px-2.5 py-1 rounded-full">
-          VISTA TUDO AGORA 🔥🔥
+    <div className="mt-4 rounded-xl bg-secondary/60 p-4 border border-primary/20">
+      <div className="flex items-center gap-2 mb-2">
+        <span className="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded-full border border-primary/20">
+          57% OFF
         </span>
       </div>
-      <span className="text-xs text-green-600 font-medium mt-1 block">Promocional</span>
-
-      <div className="flex items-center justify-between mt-3">
-        <span className="text-sm font-medium text-foreground">1 Mês</span>
-        <span className="text-3xl font-extrabold text-primary text-right" style={{ fontFamily: 'Outfit' }}>
-          R$ 29,90 →
-        </span>
+      
+      <div className="flex items-end justify-between mt-1">
+        <span className="text-base font-bold text-foreground">1 mês</span>
+        <div className="flex flex-col items-end">
+          <span className="text-sm line-through text-muted-foreground font-medium" style={{ fontFamily: 'Outfit' }}>
+            R$ 69,90
+          </span>
+          <span className="text-3xl font-extrabold text-primary" style={{ fontFamily: 'Outfit' }}>
+            R$ 29,90
+          </span>
+        </div>
       </div>
     </div>
 

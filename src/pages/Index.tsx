@@ -10,22 +10,10 @@ import Footer from '@/components/landing/Footer';
 
 const lockedPosts = [
   {
-    likes: '67.4K',
-    comments: '1.9K',
-    mediaType: 'image' as const,
-    mediaUrl: '/post_img_1.jpg.jpeg',
-  },
-  {
     likes: '45.2K',
     comments: '982',
     mediaType: 'video' as const,
     mediaUrl: '/post_video.mp4.mp4',
-  },
-  {
-    likes: '52.1K',
-    comments: '1.4K',
-    mediaType: 'image' as const,
-    mediaUrl: '/post_img_2.jpg.jpeg',
   },
 ];
 
