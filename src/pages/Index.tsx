@@ -2,7 +2,6 @@ import PlatformHeader from '@/components/landing/PlatformHeader';
 import CreatorProfile from '@/components/landing/CreatorProfile';
 import SubscriptionCard from '@/components/landing/SubscriptionCard';
 import PromotionsSection from '@/components/landing/PromotionsSection';
-import ContentCounter from '@/components/landing/ContentCounter';
 import LockedPost from '@/components/landing/LockedPost';
 import FAQSection from '@/components/landing/FAQSection';
 import FinalCTA from '@/components/landing/FinalCTA';
@@ -25,7 +24,6 @@ const Index = () => {
       <CreatorProfile />
       <SubscriptionCard />
       <PromotionsSection />
-      <ContentCounter />
       {lockedPosts.map((post, i) => (
         <LockedPost key={i} {...post} />
       ))}

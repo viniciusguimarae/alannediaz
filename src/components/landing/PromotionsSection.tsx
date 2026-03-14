@@ -6,48 +6,28 @@ const plans = [
 ];
 
 const PromotionsSection = () => {
-  const [selected, setSelected] = useState(1);
-
   return (
     <div className="mx-5 mt-6">
-      <h2 className="text-lg font-bold text-foreground" style={{ fontFamily: 'Outfit' }}>
+      <h2 className="text-sm font-semibold text-foreground mb-3" style={{ fontFamily: 'Outfit' }}>
         Promoções
       </h2>
       <div className="mt-3 space-y-2">
         {plans.map((plan) => (
           <button
             key={plan.id}
-            onClick={() => setSelected(plan.id)}
-            className={cn(
-              'w-full rounded-xl border-2 py-3 px-4 text-left transition-all duration-200',
-              selected === plan.id
-                ? 'border-primary bg-primary/5 shadow-md'
-                : 'border-border bg-card hover:border-primary/30'
-            )}
+            className="w-full h-[52px] rounded-full bg-gradient-to-r from-[#f6b28b] to-[#f2a077] flex items-center justify-between px-5 cursor-pointer transition-transform active:scale-[0.98]"
           >
-            <div className="flex items-center justify-between">
-              <div>
-                <span className="text-sm font-bold text-foreground" style={{ fontFamily: 'Outfit' }}>
-                  {plan.duration}
-                </span>
-                <span className={cn(
-                  'ml-2 text-xs font-semibold px-2 py-0.5 rounded-full',
-                  selected === plan.id
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-muted text-muted-foreground'
-                )}>
-                  {plan.badge}
-                </span>
-              </div>
-              <div className="flex items-center gap-2" style={{ fontFamily: 'Outfit' }}>
-                <span className="text-sm line-through text-muted-foreground">
-                  {plan.oldPrice}
-                </span>
-                <span className="text-xl font-extrabold text-primary">
-                  {plan.price}
-                </span>
-              </div>
+            <div className="flex items-center gap-2">
+              <span className="text-foreground text-sm font-medium">
+                {plan.duration}
+              </span>
+              <span className="text-xs font-semibold text-foreground/80">
+                ({plan.badge})
+              </span>
             </div>
+            <span className="text-foreground font-bold text-base" style={{ fontFamily: 'Outfit' }}>
+              {plan.price}
+            </span>
           </button>
         ))}
       </div>
