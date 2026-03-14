@@ -15,7 +15,7 @@ const PromotionsSection = () => {
       <h2 className="text-lg font-bold text-foreground" style={{ fontFamily: 'Outfit' }}>
         Promoções
       </h2>
-      <div className="mt-3 space-y-3">
+      <div className="mt-3 space-y-2">
         {plans.map((plan) => (
           <button
             key={plan.id}
