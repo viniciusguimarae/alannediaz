@@ -6,7 +6,7 @@ interface LockedPostProps {
 }
 
 const LockedPost = ({ mediaType, mediaUrl }: LockedPostProps) => (
-  <div className="mx-4 mb-6 rounded-2xl bg-white border border-black/5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
+  <div className="mb-6 rounded-2xl bg-white border border-black/5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden w-full">
     {/* Creator info */}
     <div className="flex items-center gap-3 p-3">
       <div className="w-8 h-8 rounded-full relative overflow-hidden flex-shrink-0">

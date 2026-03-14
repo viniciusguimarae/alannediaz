@@ -19,43 +19,46 @@ const Index = () => {
   const [activeMainTab, setActiveMainTab] = useState('Postagens');
 
   return (
-    <div className="min-h-screen bg-background max-w-md mx-auto pb-10">
+    <div className="min-h-screen bg-background max-w-[420px] mx-auto px-3 pb-10">
       <PlatformHeader />
-      <CreatorProfile />
-      {/* Plans Container */}
-      <div className="mx-4 mt-6 p-4 rounded-2xl bg-white" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+      
+      {/* Hero Super Container */}
+      <div className="mt-4 p-4 rounded-2xl bg-white" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+        <CreatorProfile />
         <SubscriptionCard />
         <PromotionsSection />
       </div>
 
-      {/* Top Switcher (Postagens / Mídias) */}
-      <div className="flex px-4 pt-1 mt-6 mb-5 border-b border-border mx-4">
-        <button
-          onClick={() => setActiveMainTab('Postagens')}
-          className={cn(
-            'flex-1 pb-3 pt-3 text-[14px] font-medium flex items-center justify-center gap-1.5 transition-all relative tracking-tight',
-            activeMainTab === 'Postagens' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
-          )}
-        >
-          <FileText className="h-[15px] w-[15px]" strokeWidth={1.5} />
-          Postagens
-          {activeMainTab === 'Postagens' && (
-            <div className="absolute bottom-0 left-[20%] w-[60%] h-[2px] bg-primary rounded-t-full" />
-          )}
-        </button>
-        <button
-          onClick={() => setActiveMainTab('Mídias')}
-          className={cn(
-            'flex-1 pb-3 pt-3 text-[14px] font-medium flex items-center justify-center gap-1.5 transition-all relative tracking-tight',
-            activeMainTab === 'Mídias' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
-          )}
-        >
-          <ImageIcon className="h-[15px] w-[15px]" strokeWidth={1.5} />
-          Mídias
-          {activeMainTab === 'Mídias' && (
-            <div className="absolute bottom-0 left-[20%] w-[60%] h-[2px] bg-primary rounded-t-full" />
-          )}
-        </button>
+      {/* Tabs Container */}
+      <div className="mt-5 mb-4 p-2 rounded-2xl bg-white" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+        <div className="flex">
+          <button
+            onClick={() => setActiveMainTab('Postagens')}
+            className={cn(
+              'flex-1 py-1.5 text-[14px] font-medium flex items-center justify-center gap-1.5 transition-all relative tracking-tight',
+              activeMainTab === 'Postagens' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
+            )}
+          >
+            <FileText className="h-[15px] w-[15px]" strokeWidth={1.5} />
+            Postagens
+            {activeMainTab === 'Postagens' && (
+              <div className="absolute -bottom-2 left-[20%] w-[60%] h-[2px] bg-primary rounded-t-full" />
+            )}
+          </button>
+          <button
+            onClick={() => setActiveMainTab('Mídias')}
+            className={cn(
+              'flex-1 py-1.5 text-[14px] font-medium flex items-center justify-center gap-1.5 transition-all relative tracking-tight',
+              activeMainTab === 'Mídias' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
+            )}
+          >
+            <ImageIcon className="h-[15px] w-[15px]" strokeWidth={1.5} />
+            Mídias
+            {activeMainTab === 'Mídias' && (
+              <div className="absolute -bottom-2 left-[20%] w-[60%] h-[2px] bg-primary rounded-t-full" />
+            )}
+          </button>
+        </div>
       </div>
 
       {activeMainTab === 'Postagens' ? (
