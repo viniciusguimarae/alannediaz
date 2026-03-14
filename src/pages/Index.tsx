@@ -1,4 +1,3 @@
-import PromoBar from '@/components/landing/PromoBar';
 import PlatformHeader from '@/components/landing/PlatformHeader';
 import CreatorProfile from '@/components/landing/CreatorProfile';
 import SubscriptionCard from '@/components/landing/SubscriptionCard';
@@ -33,7 +32,6 @@ const lockedPosts = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background max-w-md mx-auto">
-      <PromoBar />
       <PlatformHeader />
       <CreatorProfile />
       <SubscriptionCard />

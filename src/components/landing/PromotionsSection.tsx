@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const plans = [
-  { id: 1, duration: '30 Dias', badge: 'Mais popular', price: 'R$ 14,90' },
-  { id: 2, duration: '3 Meses', badge: 'Melhor oferta', price: 'R$ 32,90' },
-  { id: 3, duration: '6 Meses', badge: 'Exclusivo', price: 'R$ 24,90' },
+  { id: 1, duration: '30 Dias', badge: 'Mais popular', oldPrice: 'R$ 69,90', price: 'R$ 29,90' },
 ];
 
 const PromotionsSection = () => {
@@ -41,9 +39,14 @@ const PromotionsSection = () => {
                   {plan.badge}
                 </span>
               </div>
-              <span className="text-lg font-extrabold text-primary" style={{ fontFamily: 'Outfit' }}>
-                {plan.price}
-              </span>
+              <div className="flex items-center gap-2" style={{ fontFamily: 'Outfit' }}>
+                <span className="text-sm line-through text-muted-foreground">
+                  {plan.oldPrice}
+                </span>
+                <span className="text-xl font-extrabold text-primary">
+                  {plan.price}
+                </span>
+              </div>
             </div>
           </button>
         ))}
