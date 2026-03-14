@@ -10,8 +10,6 @@ import MediaGallery from '@/components/landing/MediaGallery';
 
 const lockedPosts = [
   {
-    likes: '45.2K',
-    comments: '982',
     mediaType: 'video' as const,
     mediaUrl: '/post_video.mp4.mp4',
   },

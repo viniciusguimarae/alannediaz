@@ -1,22 +1,20 @@
-import { Lock, Heart, MessageCircle } from 'lucide-react';
+import { Lock, Heart, MessageCircle, Bookmark, CircleDollarSign } from 'lucide-react';
 
 interface LockedPostProps {
-  likes: string;
-  comments: string;
   mediaType: 'image' | 'video';
   mediaUrl: string;
 }
 
-const LockedPost = ({ likes, comments, mediaType, mediaUrl }: LockedPostProps) => (
-  <div className="mx-5 mb-6 rounded-2xl bg-card border border-border shadow-md overflow-hidden">
+const LockedPost = ({ mediaType, mediaUrl }: LockedPostProps) => (
+  <div className="mx-5 mb-6 rounded-2xl bg-card border border-border shadow-sm overflow-hidden">
     {/* Creator info */}
     <div className="flex items-center gap-3 p-3">
-      <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/40 to-orange-200 flex items-center justify-center text-xs font-bold text-primary-foreground overflow-hidden shadow-sm" style={{ fontFamily: 'Outfit' }}>
+      <div className="w-9 h-9 rounded-full relative overflow-hidden flex-shrink-0">
         <img src="/perfil.jpg.png" alt="NC" className="w-full h-full object-cover" />
       </div>
-      <div>
-        <p className="text-sm font-semibold text-foreground leading-none">Nicolle Caroline</p>
-        <p className="text-xs text-muted-foreground mt-1">@nicollecaroline</p>
+      <div className="flex flex-col justify-center">
+        <p className="text-[14px] font-semibold text-foreground leading-tight tracking-tight">Nicolle Caroline</p>
+        <p className="text-[12px] text-muted-foreground leading-tight tracking-tight">@nicollecaroline</p>
       </div>
     </div>
 
@@ -45,22 +43,29 @@ const LockedPost = ({ likes, comments, mediaType, mediaUrl }: LockedPostProps) =
       {/* Lock Overlay Content */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
         <div 
-          className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg backdrop-blur-sm"
-          style={{ backgroundColor: 'rgba(255,255,255,0.85)' }}
+          className="w-16 h-16 rounded-full flex items-center justify-center shadow-lg backdrop-blur-sm bg-white/85"
         >
-          <Lock className="h-7 w-7 text-black drop-shadow-sm" />
+          <Lock className="h-7 w-7 text-black drop-shadow-sm" strokeWidth={1.5} />
         </div>
       </div>
     </div>
 
-    {/* Engagement */}
-    <div className="flex items-center gap-5 p-3 text-muted-foreground text-sm">
-      <span className="flex items-center gap-1.5 font-medium">
-        <Heart className="h-4 w-4" /> {likes}
-      </span>
-      <span className="flex items-center gap-1.5 font-medium">
-        <MessageCircle className="h-4 w-4" /> {comments}
-      </span>
+    {/* Engagement Action Bar */}
+    <div className="flex items-center justify-between p-3.5 text-foreground">
+      <div className="flex items-center gap-4">
+        <button className="transition-transform active:scale-90 hover:text-muted-foreground">
+          <Heart className="h-[22px] w-[22px]" strokeWidth={1.5} />
+        </button>
+        <button className="transition-transform active:scale-90 hover:text-muted-foreground">
+          <MessageCircle className="h-[22px] w-[22px]" strokeWidth={1.5} />
+        </button>
+        <button className="transition-transform active:scale-90 hover:text-muted-foreground">
+          <CircleDollarSign className="h-[22px] w-[22px]" strokeWidth={1.5} />
+        </button>
+      </div>
+      <button className="transition-transform active:scale-90 hover:text-muted-foreground">
+        <Bookmark className="h-[22px] w-[22px]" strokeWidth={1.5} />
+      </button>
     </div>
   </div>
 );
