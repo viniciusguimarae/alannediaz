@@ -7,6 +7,7 @@ import LockedPost from '@/components/landing/LockedPost';
 import FAQSection from '@/components/landing/FAQSection';
 import FinalCTA from '@/components/landing/FinalCTA';
 import Footer from '@/components/landing/Footer';
+import MediaGallery from '@/components/landing/MediaGallery';
 
 const lockedPosts = [
   {
@@ -28,6 +29,7 @@ const Index = () => {
       {lockedPosts.map((post, i) => (
         <LockedPost key={i} {...post} />
       ))}
+      <MediaGallery />
       <FAQSection />
       <FinalCTA />
       <Footer />
