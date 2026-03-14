@@ -7,7 +7,7 @@ const CreatorProfile = () => {
   return (
     <div className="w-full">
       {/* Banner */}
-      <div className="h-[120px] bg-gradient-to-br from-primary/80 via-primary/60 to-orange-300 relative overflow-hidden rounded-[12px] m-[12px]">
+      <div className="h-[120px] bg-gradient-to-br from-primary/80 via-primary/60 to-orange-300 relative overflow-hidden">
         <img src="/cover.jpg.jpeg" alt="Cover" className="w-full h-full object-cover" />
       </div>
 
@@ -23,10 +23,10 @@ const CreatorProfile = () => {
 
             {/* Stats row */}
             <div className="flex items-center gap-3 text-muted-foreground text-[11px] font-medium mt-1">
-              <span className="flex items-center gap-1"><Camera className="h-3.5 w-3.5" /> 393</span>
-              <span className="flex items-center gap-1"><Video className="h-3.5 w-3.5" /> 164</span>
-              <span className="flex items-center gap-1"><Lock className="h-3.5 w-3.5" /> 20</span>
-              <span className="flex items-center gap-1"><Heart className="h-3.5 w-3.5" /> 2.1K</span>
+              <span className="flex items-center gap-1"><Camera className="h-3.5 w-3.5" /> 20</span>
+              <span className="flex items-center gap-1"><Video className="h-3.5 w-3.5" /> 14</span>
+              <span className="flex items-center gap-1"><Lock className="h-3.5 w-3.5" /> 19</span>
+              <span className="flex items-center gap-1"><Heart className="h-3.5 w-3.5" /> 1.6K</span>
             </div>
           </div>
 

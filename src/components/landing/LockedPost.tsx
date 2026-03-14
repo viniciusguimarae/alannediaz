@@ -19,7 +19,7 @@ const LockedPost = ({ mediaType, mediaUrl }: LockedPostProps) => (
     </div>
 
     {/* Blurred media preview */}
-    <div className="relative w-full aspect-[4/5] bg-black overflow-hidden flex items-center justify-center">
+    <div className="relative w-full aspect-[1/1.1] bg-black overflow-hidden flex items-center justify-center">
       {/* Background Media */}
       {mediaType === 'video' ? (
         <video 
