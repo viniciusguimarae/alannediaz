@@ -15,13 +15,13 @@ const PromotionsSection = () => {
       <h2 className="text-lg font-bold text-foreground" style={{ fontFamily: 'Outfit' }}>
         Promoções
       </h2>
-      <div className="mt-3 space-y-3">
+      <div className="mt-3 space-y-2">
         {plans.map((plan) => (
           <button
             key={plan.id}
             onClick={() => setSelected(plan.id)}
             className={cn(
-              'w-full rounded-xl border-2 p-4 text-left transition-all duration-200',
+              'w-full rounded-xl border-2 py-3 px-4 text-left transition-all duration-200',
               selected === plan.id
                 ? 'border-primary bg-primary/5 shadow-md'
                 : 'border-border bg-card hover:border-primary/30'

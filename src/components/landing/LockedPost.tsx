@@ -8,7 +8,7 @@ interface LockedPostProps {
 }
 
 const LockedPost = ({ likes, comments, gradientFrom, gradientTo }: LockedPostProps) => (
-  <div className="mx-5 mt-4 rounded-2xl bg-card border border-border shadow-sm overflow-hidden">
+  <div className="mx-5 mt-3 rounded-2xl bg-card border border-border shadow-sm overflow-hidden">
     {/* Creator info */}
     <div className="flex items-center gap-3 p-3">
       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/40 to-orange-200 flex items-center justify-center text-xs font-bold text-primary-foreground" style={{ fontFamily: 'Outfit' }}>
