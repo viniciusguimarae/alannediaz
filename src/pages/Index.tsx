@@ -14,19 +14,19 @@ const lockedPosts = [
     likes: '67.4K',
     comments: '1.9K',
     mediaType: 'image' as const,
-    mediaUrl: 'https://images.unsplash.com/photo-1515347619362-75d194cbf5e7?q=80&w=600&auto=format&fit=crop',
+    mediaUrl: '/post_img_1.jpg',
   },
   {
     likes: '45.2K',
     comments: '982',
     mediaType: 'video' as const,
-    mediaUrl: 'https://drive.google.com/uc?export=download&id=1JoDjac51C2wlLT93_WHm_eKV76BT9Z5F',
+    mediaUrl: '/post_video.mp4',
   },
   {
     likes: '52.1K',
     comments: '1.4K',
     mediaType: 'image' as const,
-    mediaUrl: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=600&auto=format&fit=crop',
+    mediaUrl: '/post_img_2.jpg',
   },
 ];
 
