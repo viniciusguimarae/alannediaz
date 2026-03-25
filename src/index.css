@@ -88,4 +88,19 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
   }
+
+  @keyframes soft-pulse {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-soft-pulse {
+    animation: soft-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
 }

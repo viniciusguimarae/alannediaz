@@ -35,8 +35,11 @@ const PromotionsSection = () => {
       >
         <div className="overflow-hidden space-y-2">
           {plans.map((plan) => (
-            <div
+            <a
               key={plan.id}
+              href="https://syncpagamentoseguro.com/checkout/a162c7ad-bdd9-4f0b-9e79-e9c6dc2334ea+a15734bc-23d7-4b19-9bb1-7baccaa9fa05"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full h-[42px] rounded-full bg-[linear-gradient(90deg,#f4b087_0%,#efaa84_45%,#f3b99c_100%)] flex items-center justify-between px-[18px] cursor-pointer transition-transform active:scale-[0.98]"
             >
               <div className="flex items-center gap-2">
@@ -50,7 +53,7 @@ const PromotionsSection = () => {
               <span className="text-foreground font-semibold text-[14px] tracking-tight">
                 {plan.price}
               </span>
-            </div>
+            </a>
           ))}
         </div>
       </div>

@@ -7,11 +7,14 @@ import SubscriptionCard from '@/components/landing/SubscriptionCard';
 import PromotionsSection from '@/components/landing/PromotionsSection';
 import LockedPost from '@/components/landing/LockedPost';
 import MediaGallery from '@/components/landing/MediaGallery';
+import ObservationCard from '@/components/landing/ObservationCard';
 
 const lockedPosts = [
   {
-    mediaType: 'video' as const,
-    mediaUrl: '/post_video.mp4.mp4',
+    media: [
+      { type: 'video' as const, url: '/post_video.mp4.mp4' },
+      { type: 'video' as const, url: '/video2.mp4.mp4' }
+    ],
   },
 ];
 
@@ -62,9 +65,12 @@ const Index = () => {
       </div>
 
       {activeMainTab === 'Postagens' ? (
-        lockedPosts.map((post, i) => (
-          <LockedPost key={i} {...post} />
-        ))
+        <>
+          {lockedPosts.map((post, i) => (
+            <LockedPost key={i} {...post} />
+          ))}
+          <ObservationCard />
+        </>
       ) : (
         <MediaGallery />
       )}
