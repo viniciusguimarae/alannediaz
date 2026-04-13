@@ -34,7 +34,7 @@ const CreatorProfile = () => {
           <div className="mt-1">
             <div className="flex items-center gap-1">
               <h1 className="text-lg font-semibold text-foreground leading-none tracking-tight">
-                Alane Diaz
+                Alanne Diaz
               </h1>
               <BadgeCheck className="h-[14px] w-[14px] text-primary fill-white" strokeWidth={1.5} />
             </div>
@@ -45,7 +45,7 @@ const CreatorProfile = () => {
         {/* Bio */}
         <div className="mt-3">
           <p className={`text-[13px] text-muted-foreground leading-relaxed tracking-tight ${!expanded ? 'line-clamp-3' : ''}`}>
-            Oie amor! 💕 Aqui você vai ter acesso ao meu conteúdo mais exclusivo e ousado. 
+            Oie amor! Me chamo Alanne, sou uma trans bem safada e feminina 💕 Aqui você vai ter acesso ao meu conteúdo mais exclusivo e ousado. 
             Fotos e vídeos que não posto em nenhum outro lugar. Vem comigo e aproveita essa 
             promoção especial que preparei com muito carinho pra você! 🔥
           </p>
